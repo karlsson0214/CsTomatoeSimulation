@@ -81,18 +81,8 @@ namespace TomatoeSimulation
         /// </summary>
         public void Step()
         {
-            // tomatoe to the left and right ripens each time
-            TomatoeBox nextBox = new TomatoeBox(noTomatoes);
-            for (int i = 0; i < noTomatoes; ++i)
-            {
-                if (tomatoeBox.IsRipeAt(i))
-                {
-                    nextBox.RipeAt(i - 1);
-                    nextBox.RipeAt(i);
-                    nextBox.RipeAt(i + 1);
-                }
-            }
-            tomatoeBox = nextBox;           
+            // TODO
+            
             System.Diagnostics.Debug.WriteLine(tomatoeBox.ToString());
             currentStep += 1;
         }
